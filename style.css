@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: hsl(233, 47%, 7%);
+  padding: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  width: 17rem;
+}
+.contects {
+  padding: 1.2rem;
+  text-align: center;
+}
+.contects h1 {
+  font-size: 25px;
+  color: hsl(0, 0%, 100%);
+  margin: 1rem 0 1rem;
+  width: 90%;
+}
+.container h1 span {
+  color: hsl(277, 64%, 61%);
+}
+p {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+h3 {
+  padding-bottom: 0.2rem;
+  color: hsl(0, 0%, 100%);
+}
+.item1 p {
+  font-size: 10px;
+}
+/* images */
+img {
+  height: 100%;
+}
+.container .images {
+  background: url(./images/image-header-mobile.jpg) no-repeat center/cover;
+  height: 12.5rem;
+  border-radius: 10px 10px 0 0;
+}
+.container .overay {
+  background-color: hsl(277, 64%, 61%, 0.5);
+  height: 12.5rem;
+  border-radius: 10px 10px 0 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 0;
+    width: 45rem;
+  }
+  .contects {
+    width: 50%;
+    text-align: start;
+    padding: 1.5rem 2.8rem;
+  }
+  .contects h1 {
+    font-size: 24px;
+    padding-bottom: 1rem;
+  }
+  p {
+    text-align: start;
+    font-size: 12px;
+  }
+  .amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    padding-top: 1rem;
+  }
+  .container .images {
+    background: url(./images/image-header-desktop.jpg) no-repeat center/cover;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+    width: 50%;
+  }
+  .container .overay {
+    background-color: hsl(277, 64%, 61%, 0.5);
+    height: 290px;
+    border-radius: 0 10px 10px 0;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
